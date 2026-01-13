@@ -15,7 +15,7 @@
 header{
 background-color: rgba(255, 144, 14, 0.1);
 }
-.nav-descripton{
+.nav-descripton, .banner-section{
     max-width: 1140px;
     margin: 0 auto;
     padding: 30px 0 30px;
@@ -35,4 +35,14 @@ nav a{
     list-style: none;
     gap: 20px;
     align-items: center;
+}
+.banner-section{
+    text-align: center;
+}
+.banner-heading{
+    font-size: 4rem;
+    font-weight: 700;
+}
+header>section>div{
+    max-width: 850px;
 }
