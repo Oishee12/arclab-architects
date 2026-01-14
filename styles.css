@@ -3,13 +3,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .work-sans {
   font-family: "Work Sans", sans-serif;
-}
+} 
+
 /* shared styles */
 .display-flex{
     display: flex;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 .dark-01{
 color: rgba(19, 19, 19, 1);
@@ -20,7 +26,7 @@ color: rgba(66, 66, 66, 1);
 .orange{
     color: rgba(255, 144, 14, 1);
 }
-.orangebg{
+.orange-bg{
     background-color: rgba(255, 144, 14, 1);
 }
 
@@ -28,23 +34,32 @@ color: rgba(66, 66, 66, 1);
 header{
 background-color: rgba(255, 144, 14, 0.1);
 }
-.nav-description, .banner-section{
+.nav-description{
     max-width: 1140px;
     margin: 0 auto;
     padding: 30px 0 30px;
     justify-content: space-between;
 }
+.banner-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+}
 nav a{
     text-decoration: none;
-    /* color: black; */
     font-size: 1.5rem;
     font-weight: 500;
     color: rgba(66, 66, 66, 1);
     line-height: 26px;
 }
+.nav-break{
+    display: none;
+}
 .nav-heading{
     font-size: 2.8rem;
     font-weight: 700;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 .nav-features{
     list-style: none;
@@ -67,6 +82,7 @@ nav a{
 header>section>div{
     max-width: 850px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .primary-btn{
     padding: 20px 35px;
@@ -77,6 +93,46 @@ header>section>div{
     border: none;
     margin-bottom: 30px;
 }
+.primary-btn:hover{
+    cursor: pointer;
+    opacity: 0.85;
+}
 header img{
     width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    nav div{
+        flex-direction: column;
+    }
+    .nav-heading{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.nav-features{
+    gap: 15px;
+    justify-content: center;
+     padding-top: 20px;
+     flex-wrap: wrap;
+}
+nav a{
+    font-size: 1.25rem;
+    line-height: 26px;
+}
+.banner-heading{
+    font-size: 2rem;
+}
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+     nav div{
+        flex-direction: column;
+    }
+    .nav-heading{
+    text-align: center;
+}
+.nav-features{
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+}
 }
