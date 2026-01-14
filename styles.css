@@ -15,13 +15,17 @@
 }
 .container{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 80px auto;
+    border: 1px solid red;
 }
 .dark-01{
 color: rgba(19, 19, 19, 1);
 }
 .dark-02{
 color: rgba(66, 66, 66, 1);
+}
+.dark-03{
+    color: rgba(114, 114, 114, 1);
 }
 .orange{
     color: rgba(255, 144, 14, 1);
@@ -100,7 +104,39 @@ header>section>div{
 header img{
     width: 100%;
 }
+/* quick features design */
+.quick-list{
+    gap: 60px;
+}
+.quick-img img{
+    width: 100%;
+}
+.quick-img{
+    width: 50%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+.quick-info{
+    width: 50%;
+    align-items: center;
+}
+.quick-heading{
+font-size: 2.8rem;
+padding-bottom: 20px;
+}
+.heading-one{
+    font-weight: 500;
+}
+.heading-two{
+    font-weight: 700;
+}
+.heading-three{
+    font-weight: 700;
+}
 
+
+/* responsive for mobile device */
 @media screen and (max-width: 576px) {
     nav div{
         flex-direction: column;
