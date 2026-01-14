@@ -1,94 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .work-sans {
-  font-family: "Work Sans", sans-serif;
-} 
+    font-family: "Work Sans", sans-serif;
+}
 
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.container{
+
+.container {
     max-width: 1140px;
     margin: 80px auto;
     border: 1px solid red;
 }
-.dark-01{
-color: rgba(19, 19, 19, 1);
+
+.dark-01 {
+    color: rgba(19, 19, 19, 1);
 }
-.dark-02{
-color: rgba(66, 66, 66, 1);
+
+.dark-02 {
+    color: rgba(66, 66, 66, 1);
 }
-.dark-03{
+
+.dark-03 {
     color: rgba(114, 114, 114, 1);
 }
-.orange{
+
+.orange {
     color: rgba(255, 144, 14, 1);
 }
-.orange-bg{
+
+.orange-bg {
     background-color: rgba(255, 144, 14, 1);
 }
 
 /* header design */
-header{
-background-color: rgba(255, 144, 14, 0.1);
+header {
+    background-color: rgba(255, 144, 14, 0.1);
 }
-.nav-description{
+
+.nav-description {
     max-width: 1140px;
     margin: 0 auto;
     padding: 30px 0 30px;
     justify-content: space-between;
 }
-.banner-section{
+
+.banner-section {
     max-width: 1140px;
     margin: 0 auto;
     padding: 30px 0 30px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
     color: rgba(66, 66, 66, 1);
     line-height: 26px;
 }
-.nav-break{
+
+.nav-break {
     display: none;
 }
-.nav-heading{
+
+.nav-heading {
     font-size: 2.8rem;
     font-weight: 700;
     max-width: 100%;
     overflow-wrap: break-word;
 }
-.nav-features{
+
+.nav-features {
     list-style: none;
     gap: 20px;
     align-items: center;
 }
-.banner-section{
+
+.banner-section {
     text-align: center;
 }
-.banner-heading{
+
+.banner-heading {
     font-size: 4rem;
     font-weight: 700;
- padding-bottom: 20px;
+    padding-bottom: 20px;
 }
-.banner-para{
+
+.banner-para {
     line-height: 26px;
     color: rgba(114, 114, 114, 1);
     padding-bottom: 20px;
 }
-header>section>div{
+
+header>section>div {
     max-width: 850px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.primary-btn{
+
+.primary-btn {
     padding: 20px 35px;
     color: rgba(255, 255, 255, 1);
     font-weight: 600;
@@ -97,78 +115,111 @@ header>section>div{
     border: none;
     margin-bottom: 30px;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
     cursor: pointer;
     opacity: 0.85;
 }
-header img{
+
+header img {
     width: 100%;
 }
+
 /* quick features design */
-.quick-list{
+
+.quick-list {
     gap: 60px;
 }
-.quick-img img{
+
+.quick-img img {
     width: 100%;
 }
-.quick-img{
+
+.quick-img {
     width: 50%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
-.quick-info{
+
+.quick-info {
     width: 50%;
     align-items: center;
 }
-.quick-heading{
-font-size: 2.8rem;
-padding-bottom: 20px;
+
+.quick-heading {
+    font-size: 2.8rem;
+    padding-bottom: 20px;
 }
-.heading-one{
+
+.heading-one {
     font-weight: 500;
 }
-.heading-two{
+
+.heading-two {
     font-weight: 700;
 }
-.heading-three{
+
+.heading-three {
     font-weight: 700;
 }
 
 
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
-    nav div{
+    nav div {
         flex-direction: column;
     }
-    .nav-heading{
-    font-size: 1.8rem;
+
+    .nav-heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .nav-features {
+        gap: 15px;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    .banner-heading {
+        font-size: 2rem;
+    }
+    /* quick section */
+    .quick-list {
+ flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+}
+.quick-img {
+    width: 100%;
+    gap: 10px;
+}
+
+.quick-info {
+    width: 100%;
     text-align: center;
 }
-.nav-features{
-    gap: 15px;
-    justify-content: center;
-     padding-top: 20px;
-     flex-wrap: wrap;
 }
-nav a{
-    font-size: 1.25rem;
-    line-height: 26px;
-}
-.banner-heading{
-    font-size: 2rem;
-}
-}
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
-     nav div{
+    nav div {
         flex-direction: column;
     }
-    .nav-heading{
-    text-align: center;
-}
-.nav-features{
-    gap: 15px;
-    justify-content: center;
-    padding-top: 20px;
-}
+
+    .nav-heading {
+        text-align: center;
+    }
+
+    .nav-features {
+        gap: 15px;
+        justify-content: center;
+        padding-top: 20px;
+    }
 }
