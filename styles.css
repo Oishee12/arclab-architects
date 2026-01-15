@@ -11,14 +11,15 @@
 }
 
 /* shared styles */
-.none{
+.none {
     display: none;
 }
+
 .display-flex {
     display: flex;
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +28,9 @@
 .container {
     max-width: 1140px;
     margin: 80px auto;
-    border: 1px solid red;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .dark-01 {
@@ -175,70 +177,86 @@ header img {
 }
 
 /* features section */
-.features-heading{
+.features-heading {
     font-size: 3rem;
     font-weight: 700;
 }
-.features-para{
+
+.features-para {
     max-width: 530px;
     line-height: 26px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.card-container{
+.card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
 }
-.card-info{
-border: 1px solid rgba(255, 144, 14, 1);
-border-radius: 8px;
-text-align: center;
-padding-top: 30px;
-padding-bottom: 30px;
+
+.card-info {
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.card-info img{
+
+.card-info img {
     height: 40px;
     width: 40px;
     margin-bottom: 10px;
 }
-.card-info h5{
+
+.card-info h5 {
     color: rgba(114, 114, 114, 1);
     font-size: 1rem;
 }
 
-.card-heading{
+.card-heading {
     font-weight: 600;
     font-size: 1.5rem;
     color: rgba(66, 66, 66, 1);
     margin-bottom: 10px;
 }
+
 /* some facts features */
-.some-facts{
+.some-facts {
     text-align: center;
 }
-.sponsors-image{
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   gap: 50px;
-   /* justify-content: space-evenly; */
-    filter:grayscale(100%);
+
+.sponsors-image {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    filter: grayscale(100%);
 }
-.sponsors-image img{
+
+.sponsors-image img {
     width: 100%;
+}
+.footer{
+    background-color: rgba(255, 244, 231, 1);
+}
+.footer-para{
+    text-align: center;
+    padding: 40px 0 50px;
+    margin-bottom: 0px;
 }
 
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .container {
-    margin: 40px auto;
-}
+        margin: 40px auto;
+    }
+
     nav div {
         flex-direction: column;
     }
 
-    .nav-heading, .features-heading {
+    .nav-heading,
+    .features-heading {
         font-size: 1.8rem;
         text-align: center;
     }
@@ -258,35 +276,45 @@ padding-bottom: 30px;
     .banner-heading {
         font-size: 2rem;
     }
+
     /* quick section */
     .quick-list {
- flex-direction: column;
+        flex-direction: column;
         gap: 10px;
         justify-content: center;
-}
-.quick-img {
-    width: 100%;
-    gap: 10px;
-}
+    }
 
-.quick-info {
-    width: 100%;
-    text-align: center;
-}
-/* features section */
-.card-container{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}      
+    .quick-img {
+        width: 100%;
+        gap: 10px;
+    }
 
-/* some facts section */
-.sponsors-image{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    .quick-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* features section */
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* some facts section */
+    .sponsors-image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* footer */
+    .footer-para{
+    margin-bottom: 0px;
 }
-}                                                                                                                                                                         
+}
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        margin: 60px auto;
+    }
     nav div {
         flex-direction: column;
     }
@@ -300,9 +328,17 @@ padding-bottom: 30px;
         justify-content: center;
         padding-top: 20px;
     }
+
     /* some facts section */
-.sponsors-image{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    .sponsors-image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .sponsors-image img {
+    width: 70%;
+}
+/* footer */
+    .footer-para{
+    margin-bottom: 0px;
 }
 }
